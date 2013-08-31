@@ -1,0 +1,3 @@
+[
+	{ "keys": ["ctrl+r", "ctrl+w"], "command": "cycle_white_space" }
+]

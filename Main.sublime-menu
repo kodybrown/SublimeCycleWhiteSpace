@@ -1,0 +1,18 @@
+[
+    {
+        "id": "view",
+        "caption": "View",
+        "children":
+        [
+            {
+                "id": "cycle_through_whitespace_separator",
+                "caption": "-"
+            },
+            {
+                "id": "cycle_through_whitespace",
+                "caption": "Cycle Through Whitespace",
+                "command": "cycle_white_space"
+            }
+        ]
+    }
+]
