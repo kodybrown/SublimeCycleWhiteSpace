@@ -6,12 +6,12 @@
             "description": "Cycle's through the three options for displaying whitespace: none, selection, and all.",
             "author": "Kody Brown (kody@bricksoft.com, github:kodybrown)",
             "homepage": "https://github.com/kodybrown/SublimeCycleWhiteSpace",
-            "last_modified": "2013-08-30 00:00:00",
+            "last_modified": "2013-09-03 00:00:00",
             "platforms": {
                 "*": [
                     {
-                        "version": "1.0.21",
-                        "url": "http://cloud.github.com/downloads/kodybrown/CycleWhiteSpace/CycleWhiteSpace-1.0.21.sublime-package"
+                        "version": "1.21.1309.03",
+                        "url": "http://cloud.github.com/downloads/kodybrown/SublimeCycleWhiteSpace/SublimeCycleWhiteSpace-1.21.1309.03.sublime-package"
                     }
                 ]
             }

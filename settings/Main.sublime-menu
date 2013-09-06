@@ -1,0 +1,37 @@
+[
+	{
+		"id": "preferences",
+		"children":
+		[
+			{
+				"id": "package-settings",
+				"children":
+				[
+					{
+						//id": "wasatchwizard-cycle-through-whitespace-plugin",
+						"caption": "Cycle Through Whitespace",
+						"mnemonic": "C",
+						"children":
+						[
+							{
+								"command": "open_file", "args":
+								{
+										"file": "${packages}/Cycle Through Whitespace/CycleThroughWhitespace.sublime-settings"
+								},
+								"caption": "Settings – Default"
+							},
+							{
+								"command": "open_file", "args":
+								{
+										"file": "${packages}/User/CycleThroughWhitespace.sublime-settings"
+								},
+								"caption": "Settings – User"
+							},
+							{ "caption": "-" }
+						]
+					}
+				]
+			}
+		]
+	}
+]

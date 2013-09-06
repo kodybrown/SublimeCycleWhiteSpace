@@ -1,7 +1,6 @@
 [
     {
         "id": "view",
-        "caption": "View",
         "children":
         [
             {
@@ -9,9 +8,10 @@
                 "caption": "-"
             },
             {
-                "id": "cycle_through_whitespace",
+                "id": "cycle_through_whitespace_menu",
                 "caption": "Cycle Through Whitespace",
-                "command": "cycle_white_space"
+                "mnemonic": "C",
+                "command": "cycle_through_whitespace"
             }
         ]
     }

@@ -1,6 +1,6 @@
-import sublime, sublime_plugin
+import os, sublime, sublime_plugin
 
-class CycleWhiteSpaceCommand( sublime_plugin.TextCommand ):
+class CycleThroughWhitespaceCommand( sublime_plugin.TextCommand ):
     def run( self, edit ):
         view = self.view
 
