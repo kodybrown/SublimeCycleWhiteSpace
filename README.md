@@ -12,12 +12,14 @@ Cycle's through Sublime Text's three options for displaying white space: none, s
 
 ## Install The Plugin
 
-Either clone into your sublime packages directory. Sorry, I haven't even looked at using [Package Control](https://github.com/wbond/sublime_package_control/) yet.
+Clone into your sublime packages directory.
+
+Sorry, I haven't even looked at using [Package Control](https://github.com/wbond/sublime_package_control/) yet.
 
 ## Install Requirements
 
  * Sublime Text 3
- * I don't know if it works with ST2.
+ * I don't know if it works with Sublime Text 2 or not.
 
 
 # Configuration
