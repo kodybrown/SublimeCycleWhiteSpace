@@ -1,0 +1,41 @@
+{
+    "schema_version": "2.0",
+    "packages": [
+        {
+            "name": "CycleThroughWhitespace",
+            //"description": "Cycle's through the three options for displaying whitespace: none, selection, and all.",
+            //"author": "Kody Brown (thewizard@wasatchwizard.com, github:kodybrown)",
+            //"homepage": "https://github.com/kodybrown/SublimeCycleWhiteSpace",
+            //"last_modified": "2013-12-13 00:00:00",
+            //"readme": "https://raw.github.com/kodybrown/SublimeCycleWhiteSpace/master/README.md",
+            //"issues": "https://github.com/kodybrown/SublimeCycleWhiteSpace/issues",
+            //"donate": "https://gittip.com/kodybrown",
+            "labels": [ "configuration", "whitespace" ],
+            "releases": [
+                {
+                    "sublime_text": "*",
+                    "details": "https://github.com/kodybrown/SublimeCycleWhiteSpace"
+
+                    // In addition to the recommendation above of pulling releases
+                    // from tags that are semantic version numbers, releases can also
+                    // comefrom a custom branch.
+                    //"details": "https://github.com/wbond/sublime_alignment/tree/custom_branch"
+
+                    // Defaults to "*", or all platforms.
+                    //
+                    // "windows", "windows-x64", "windows-x32"
+                    //"platforms": "windows",
+                    //"sublime_text": "*",
+                    //"details": "https://github.com/wbond/sublime_alignment/tree/win32"
+                    //
+                    // "osx", "osx-x64"
+                    //
+                    // "linux", "linux-x32", "linux-x64"
+                    //"platforms": [ "osx", "linux" ],
+                    //"sublime_text": "*",
+                    //"details": "https://github.com/wbond/sublime_alignment/tree/posix"
+                }
+            ]
+        }
+    ]
+}
