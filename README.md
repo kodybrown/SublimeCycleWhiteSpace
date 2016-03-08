@@ -5,7 +5,9 @@ Cycle's through Sublime Text's three options for displaying white space: none, s
 
 # Features
 
+ * One shortcut key to cycle through the three possible modes of showing whitespace.
  * Configure which options to cycle through in the settings.
+ * Provides a Whitespace menu (under View) to change whitespace.
 
 
 # Installation
@@ -14,7 +16,8 @@ Cycle's through Sublime Text's three options for displaying white space: none, s
 
 Clone into your sublime packages directory.
 
-Sorry, I haven't even looked at using [Package Control](https://github.com/wbond/sublime_package_control/) yet.
+OR, use Package Control, `Cycle Through Whitespace`.
+
 
 ## Install Requirements
 
@@ -29,9 +32,8 @@ Sorry, I haven't even looked at using [Package Control](https://github.com/wbond
 Turn each option on or off here. If you want to alternate all three view options from your shortcut key, then set each to `true`. If you only want to alternate between `selection` and `all`, set only those two properties to `true`.
 
     {
-        "cycle_whitespace_none": true,
-        "cycle_whitespace_selection": true,
-        "cycle_whitespace_all": true
+        // Can be one or more of the following: "none", "selection", or "all"
+        "cycle_whitespace": [ "none", "selection", "all" ]
     }
 
 ## Default (Windows).sublime-keymap
