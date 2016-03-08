@@ -1,5 +1,6 @@
 {
-	"cycle_whitespace_none": true,
-	"cycle_whitespace_selection": true,
-	"cycle_whitespace_all": true
+	// "cycle_whitespace_none": true,
+	// "cycle_whitespace_selection": true,
+	// "cycle_whitespace_all": true
+    "cycle_whitespace": [ "none", "selection", "all" ]
 }

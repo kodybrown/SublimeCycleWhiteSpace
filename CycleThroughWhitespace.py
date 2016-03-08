@@ -12,7 +12,7 @@ class CycleThroughWhitespaceCommand( sublime_plugin.TextCommand ):
         plugin_name = os.path.basename(__file__)[:-3]
         plugin_settings = sublime.load_settings(plugin_name + ".sublime-settings")
 
-        if view.settings().has("cycle_whitespace_none"):
+        if view.settings().has("cycle_whitespace"):
             cycle_none = plugin_settings.get("cycle_whitespace_none")
         elif plugin_settings.has("cycle_whitespace_none"):
             cycle_none = plugin_settings.get("cycle_whitespace_none")
