@@ -4,15 +4,50 @@
         "children":
         [
             {
-                "id": "cycle_through_whitespace_separator",
+                "id": "cycle_through_whitespace_separator1",
                 "caption": "-"
             },
             {
-                "id": "cycle_through_whitespace_menu",
-                "caption": "Cycle Through Whitespace",
-                "mnemonic": "C",
-                "command": "cycle_through_whitespace"
+                "id": "whitespace",
+                "caption": "Whitespace ",
+                "mnemonic": " ",
+                "children":
+                [
+                    {
+                        "id": "cycle_through_whitespace_show_none_menu",
+                        "caption": "Hide all",
+                        "mnemonic": "H",
+                        "command": "show_no_whitespace"
+                    },
+                    {
+                        "id": "cycle_through_whitespace_show_selection_menu",
+                        "caption": "Show in selection",
+                        "mnemonic": "s",
+                        "command": "show_selection_whitespace"
+                    },
+                    {
+                        "id": "cycle_through_whitespace_show_all_menu",
+                        "caption": "Show all",
+                        "mnemonic": "a",
+                        "command": "show_all_whitespace"
+                    },
+                    {
+                        "id": "cycle_through_whitespace_separator2",
+                        "caption": "-"
+                    },
+                    {
+                        "id": "cycle_through_whitespace_menu",
+                        "caption": "Cycle through whitespace",
+                        // "mnemonic": "C",
+                        "command": "cycle_through_whitespace"
+                    }
+                ]
+            },
+            {
+                "id": "cycle_through_whitespace_separator3",
+                "caption": "-"
             }
         ]
     }
 ]
+

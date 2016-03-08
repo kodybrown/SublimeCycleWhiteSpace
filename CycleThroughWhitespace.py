@@ -1,5 +1,21 @@
 import os, sublime, sublime_plugin
 
+def set_whitespace( self, mode ):
+    view = self.view
+    view.settings().set("draw_white_space", mode)
+
+class ShowNoWhitespaceCommand( sublime_plugin.TextCommand ):
+    def run( self, edit ):
+        set_whitespace(self, 'none')
+
+class ShowSelectionWhitespaceCommand( sublime_plugin.TextCommand ):
+    def run( self, edit ):
+        set_whitespace(self, 'selection')
+
+class ShowAllWhitespaceCommand( sublime_plugin.TextCommand ):
+    def run( self, edit ):
+        set_whitespace(self, 'all')
+
 class CycleThroughWhitespaceCommand( sublime_plugin.TextCommand ):
     def run( self, edit ):
         view = self.view
@@ -12,41 +28,22 @@ class CycleThroughWhitespaceCommand( sublime_plugin.TextCommand ):
         plugin_name = os.path.basename(__file__)[:-3]
         plugin_settings = sublime.load_settings(plugin_name + ".sublime-settings")
 
-        if view.settings().has("cycle_whitespace"):
-            cycle_none = plugin_settings.get("cycle_whitespace_none")
-        elif plugin_settings.has("cycle_whitespace_none"):
-            cycle_none = plugin_settings.get("cycle_whitespace_none")
-        else:
-            cycle_none = True
-
-        if view.settings().has("cycle_whitespace_selection"):
-            cycle_selection = plugin_settings.get("cycle_whitespace_selection")
-        elif plugin_settings.has("cycle_whitespace_selection"):
-            cycle_selection = plugin_settings.get("cycle_whitespace_selection")
-        else:
-            cycle_selection = True
-
-        if view.settings().has("cycle_whitespace_all"):
-            cycle_all = plugin_settings.get("cycle_whitespace_all")
-        elif plugin_settings.has("cycle_whitespace_all"):
-            cycle_all = plugin_settings.get("cycle_whitespace_all")
-        else:
-            cycle_all = True
+        allowed = plugin_settings.get("cycle_whitespace")
 
         # Change the white_space_type based on preferences..
         if white_space_type == "all":
-            if cycle_none:
+            if 'none' in allowed:
                 view.settings().set("draw_white_space", "none")
-            elif cycle_selection:
+            elif 'selection' in allowed:
                 view.settings().set("draw_white_space", "selection")
 
         elif white_space_type == "none":
-            if cycle_selection:
+            if 'selection' in allowed:
                 view.settings().set("draw_white_space", "selection")
-            elif cycle_all:
+            elif 'all' in allowed:
                 view.settings().set("draw_white_space", "all")
         else:
-            if cycle_all:
+            if 'all' in allowed:
                 view.settings().set("draw_white_space", "all")
-            elif cycle_none:
+            elif 'none' in allowed:
                 view.settings().set("draw_white_space", "none")

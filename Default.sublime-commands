@@ -1,6 +1,18 @@
 [
-	{
-		"caption": "Cycle Through Whitespace",
-		"command": "cycle_through_whitespace"
-	}
+    {
+        "caption": "Cycle through whitespace",
+        "command": "cycle_through_whitespace"
+    },
+    {
+        "caption": "Hide all whitepace",
+        "command": "show_no_whitespace"
+    },
+    {
+        "caption": "Show whitespace in selection",
+        "command": "show_selection_whitespace"
+    },
+    {
+        "caption": "Show all whitespace",
+        "command": "show_all_whitespace"
+    }
 ]
